@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .blocking {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 30px 0px 40px 20%;
+        }
+        
+        .blocking button {
+            height: 30px;
+            width: 400px;
+        }
+        
+        .blocking input {
+            margin: 5px;
+        }
+        
+        .btnContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        
+        .blocking label {
+            margin: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="code" class="blocking">
+        <h1> Coding: </h1>
+        Write your msg <input type="text" id='msgToCode'> </input>
+
+        <label id="RCode">R: </label>
+        <div class="btnContainer">
+            <button id='coding' class="btn">Go!</button>
+        </div>
+
+
+    </div>
+
+    <div id="decode" class="blocking">
+        <h1> Decoding: </h1>
+        Write your code <input type="text" id='codeToMsg'> </input>
+        Write the dicctionary with spaces <input type="text" id='dir'> </input>
+
+        <label id="RDecode">R: </label>
+        <div class="btnContainer">
+            <button id='decoding'>Go!</button>
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
