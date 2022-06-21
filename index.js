@@ -78,7 +78,7 @@ buildDic = (msg) => {
 buildDicWithString = () => {
 
     let dir = document.getElementById("dir").value + "";
-    return dir.split(" ");
+    return dir.split("-");
 }
 
 codeBtn.addEventListener('click', lzwCode);
